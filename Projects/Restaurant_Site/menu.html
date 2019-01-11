@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!--
+    Name: Zingha Sielatshom
+    Date Created: January 3rd 2019
+    Most Recent Revision: January 8th 2019
+-->
+<html lang="en">
+    <head>
+        <title>Menu</title>
+        
+        <!--Meta Tags required for BootStraps-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Links to Bootstap stylesheets-->        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!--External Stylesheet-->
+        <link rel="stylesheet" type="text/css" href="css/restaurantStyles.css"/>
+
+        <!--Internal Stylesheet-->
+        <style>
+            caption {
+                font-weight: bold;
+                font-size: 1.2em;
+                color: #000000;
+                text-align: center;
+            }
+            tbody tr:nth-child(odd) {
+                background-color: #ecf8f8; 
+            }
+            tbody tr:nth-child(even) {
+                background-color: #FFB482; 
+            }
+            div.menu {
+                text-align: center;
+            }
+            .table {
+                width: auto;
+                margin: auto;
+            }
+            .btn {
+                background-color: #FFB4A2;
+                color:black;
+                border: black;
+            }
+            .btn:hover {
+                background-color: #B2967D;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="header container-fluid">
+            <div class="row">
+                <h1><img id="afroGourmet" src="Images/Afro-Gourmet.jpg" alt="Africa Map with Bubble Food Icons" />Afro-Gourmet</h1>
+            </div>
+
+            <noscript>
+                <p style="color: brown">The browser you're using either doesn't support JavaScript or has it disabled. This website is best viewed with <a href="https://www.enable-javascript.com/" target="_blank">JavaScript</a>enabled.</p>
+            </noscript>
+        </div>
+
+        <div class="row">
+            <nav>
+                <p>
+                    <a class="btn btn-info btn-lg" href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
+                    <a class="btn btn-info btn-lg" href="menu.html"><span class="glyphicon glyphicon-cutlery"></span>Menu</a>
+                    <a class="btn btn-info btn-lg" href="contact.html"><span class="glyphicon glyphicon-user"></span> Contact Us</a>
+                </p>
+            </nav> 
+        </div>
+
+        <div class="jumbotron-fluid">
+            <div id="carouselitem" class="carousel slide" data-ride="carousel">
+
+                <!-- Adding Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#carouselitem" data-item-to="0" class="active"></li>
+                    <li data-target="#carouselitem" data-item-to="1"></li>
+                    <li data-target="#carouselitem" data-item-to="2"></li>
+                </ul>
+
+                <!--Adding imgItemtures to item
+                -->
+                <div class="carousel-inner">
+                    <div class="item carousel-item active">
+                    <img class="imgItem" src="images/New-Location.jpg" alt="New-Location" style="width: 100%;">
+                    <div class="carousel-caption">
+                        <h2>March 2019-Coming to a Complex Near You!</h2>
+                        <p>Look out for our new location at The Grove entertainment complex</p>
+                    </div>
+                    </div>
+                    <div class="item carousel-item">
+                    <img class="imgItem" src="images/Seasonal-Menu.jpg" alt="Seasonal Menu" style="width: 100%;">
+                    <div class="carousel-caption">
+                        <h2>We're Stiring Things Up!</h2>
+                        <p>We're rolling out our seasonal menu, with special options for this season.</p>
+                    </div>
+                    </div>
+                    <div class="item carousel-item">
+                    <img class="imgItem" src="images/AG-Premium-Wine.jpg" alt="SG premium Wine" style="width: 100%; height: 130%;">
+                    <div class="carousel-caption" >
+                        <h2>New on the Menu: AG Premium Wine</h2>
+                        <p>We take wine seriously, so you don't have to. Come get a taste of French Wine at it's peak.</p>
+                    </div>
+                    </div>
+                </div>
+                    
+                    <!-- Adding Controls -->
+                    <a class="carousel-control-prev" href="#carouselitem" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselitem" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+        <div class="menu container-fluid">
+            <div class="col-md-4 left-menu">
+                <h3>Appetizers</h3>
+                <p>
+                    Beignets (Deep-fried African donuts)
+                    <br/>
+                    $6.95
+                </p>
+                <p>
+                    Nems (Beef rolls)
+                    <br/>
+                    2 for $5.95
+                </p>
+                <p>
+                    Suya (Spicy meat skewer)
+                    <br/>                        
+                    $10.95
+                </p>
+                <p>
+                    Boulettes (Spicy Meatballs)
+                    <br/>
+                    $8.95
+                </p>
+
+                <h3>Sides</h3>
+                <p>
+                    Fried Plantains
+                    <br/>
+                    $3.00
+                </p>
+                <p>
+                    French Fries
+                    <br/>
+                    $4.00
+                </p>
+                <p>
+                    Oven Roasted Potatoes
+                    <br/>
+                    $3.95
+                </p>
+                <p>
+                    Garri (Eba)
+                    <br/>
+                    $3.00
+                </p>
+                <p>
+                    Bobolo (Precooked Cassava) -5 Strips
+                    <br/>
+                    $5.00
+                </p>
+            </div>
+
+            <div class="col-md-4 main-menu">
+                <h3>Main Menu</h3>
+                <p>
+                    Kondre (Stewed Plantains)
+                    <br/>
+                    Exotic, one-pot meal with highly-seasoned spicy stewed plantains, meat and veggies.
+                    <br/>
+                    $19.95
+                </p>
+                <p>
+                    Riz Cantonais (Signature Dish)
+                    <br/>
+                    Afro-Chinese-style fried rice dish, garnished with soja sauce.
+                    <br/>
+                    $21.95
+                </p>
+                <p>
+                    Eru and Garri (Eba)
+                    <br/>
+                    Healthy satisfying leafy green dish, loaded with proteins and aromatics.
+                    <br/>
+                    Served with your choice of side (see list below)
+                    <br/>
+                    $19.95
+                </p>
+                <p>
+                    Roasted Fish
+                    <br/>
+                    Charcoal roasted BBQ fish seasoned with African spices and grilled to perfection.
+                    <br/>
+                    $19.95
+                </p>
+                <p>
+                    Ndole (Bitterleaves and Peanut Soup)
+                    <br/>
+                    Aromatic Cameroonian Spinach stew made with spinach and bitter leaves – flavored with garlic, crayfish and fortified with shrimps and beef.
+                    <br/>
+                    $19.95
+                </p>
+                <p>
+                    Pepper Soup (Signature Dish)
+                    <br/>
+                    The perfect spicy comfort food to keep you warm all Winter. Made with cow-tail and exotic spices.
+                    <br/>
+                    $13.95
+                </p>
+                <br/>
+            </div>
+
+            <div class="col-md-4 right-menu">
+                <h3>Dessert</h3>
+                <p>
+                    Pinneaple Upside-Down Cake
+                    <br/>
+                    Features a delicious caramelized pineapple topping and an incredibly buttery, moist cake!
+                    <br/>
+                    $5.00/slice
+                </p> 
+                <p>
+                    Mini Madeleines
+                    <br/>
+                    A classic French pastry - small and elegant mini madeleines with a hint of lemon.
+                    <br/>
+                    3 for $8.00
+                </p>
+                <p>
+                    Ice Cream - Chocolate, Caramel, Vanilla, Strawberry
+                    <br/>
+                    $4.00/ 1/2Pint
+                </p>
+
+                <table class="table">
+                    <caption><h3>Beverages</h3></caption>
+                    <tbody>
+                        <tr>
+                            <td>Sparkling Water</td>
+                            <td>$3.00</td>
+                        </tr>
+                        <tr>
+                            <td>Lemonade (Choose from 4 flavors)</td>
+                            <td>$3.90</td>
+                        </tr>
+                        <tr>
+                            <td>Bissap (Hibiscus Flower Drink)</td>
+                            <td>$6.95</td>
+                        </tr>
+                        <tr>
+                            <td>Signature Ginger Drink</td>
+                            <td>$7.95</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table">
+                    <caption><h3>Alcoholic Drinks</h3></caption>
+                    <tbody>
+                        <tr>
+                            <td>Matango (Palm Wine)</td>
+                            <td>$11.00</td>
+                        </tr>
+                        <tr>
+                            <td>Merlot</td>
+                            <td>$18.95-$22.95</td>
+                        </tr>
+                        <tr>
+                            <td>Bourdeaux</td>
+                            <td>$19.95-$22.95</td>
+                        </tr>
+                        <tr>
+                            <td>Louis Roederer Champagne Brut Premier</td>
+                            <td>$20.95-$24.95</td>
+                        </tr>
+                        <tr>
+                            <td>Cabernet Sauvignon</td>
+                            <td>21.95-$24.95</td>
+                        </tr>
+                        <tr>
+                            <td>AG Premium Wine</td>
+                            <td>$23.95-$26.95</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <footer>
+                <p>
+                    Hours of Operation
+                    <br/>
+                    Monday-Thursday: 11:00AM - 9:00PM
+                    <br/>
+                    Friday and Saturday: 11:00AM - 2:00AM
+                    <br/>
+                    Sunday: 12:00AM - 9:00PM
+                    <br/>
+                </p>
+                <p>
+                    16598 Anex Blvd
+                    <br/>
+                    Beverly Hills, California 90210
+                    <br/>
+                    1-310-GOURMET
+                </p>
+                <p>&copy; 2019 Afro-Gourmet. All Rights Reserved.</p>
+            </footer>
+        </div>
+        
+    </body>
+</html>
